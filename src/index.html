@@ -4,11 +4,20 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" type="module" defer></script>
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Cifrado César</h1>
+      <h3>Tu mensaje:</h3>
+      <p><input type="text" id="mensaje">
+      <h3>Desplazamiento</h3>
+      <p><input type="number" id="desplazamiento" size= 4> </p>
+      <p><button type="button" id="cifrar">CIFRAR</button>
+      <button type="button" id="descifrar">DESCIFRAR</button></p>
+      <h3>Mensaje Solicitado:</h3> 
+      <p><input type="text" id="mensajeSolicitado"></p>
     </div>
-    <script src="index.js" type="module"></script>
+    
   </body>
 </html>
