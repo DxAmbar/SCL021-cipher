@@ -25,8 +25,8 @@ describe('cipher', () => {
       expect(() => cipher.encode(0, 0)).toThrow(TypeError);
     });
 
-    it('should return "HIJKLMNOPQRSTUVWXYZABCDEFG" for "ABCDEFGHIJKLMNOPQRSTUVWXYZ" with offset 33', () => {
-      expect(cipher.encode(33, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('HIJKLMNOPQRSTUVWXYZABCDEFG');
+    it('should return "HIJKLMNÑOPQRSTUVWXYZABCDEFG" for "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ" with offset 33', () => {
+      expect(cipher.encode(33, 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ')).toBe('HIJKLMNÑOPQRSTUVWXYZABCDEFG');
     });
 
     // Hacker edition
@@ -71,8 +71,8 @@ describe('cipher', () => {
       expect(() => cipher.decode(0, 0)).toThrow(TypeError);
     });
 
-    it('should return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" for "HIJKLMNOPQRSTUVWXYZABCDEFG" with offset 33', () => {
-      expect(cipher.decode(33, 'HIJKLMNOPQRSTUVWXYZABCDEFG')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    it('should return "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ" for "HIJKLMNÑOPQRSTUVWXYZABCDEFG" with offset 33', () => {
+      expect(cipher.decode(33, 'HIJKLMNÑOPQRSTUVWXYZABCDEFG')).toBe('ABCDEFGHIJKLMNÑOPQRSTUVWXYZ');
     });
 
     //

@@ -1,0 +1,37 @@
+html, body {
+    background-color: #D3CEDF;
+    text-align: center;
+    font-family: 'roboto' , sans-cerif;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+
+.button {
+    background: whitesmoke;
+    padding: 6px;
+    margin: 5px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: black;
+    text-decoration:none;
+   color: black;
+}
+
+.button:hover{
+    background:#A8A4CE;
+    cursor: pointer;
+    }
+
+.caja {
+    width: 200px;
+    height: 100px;
+    overflow-y: scroll;
+    
+
+    
+}

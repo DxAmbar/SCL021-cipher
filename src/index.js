@@ -1,8 +1,8 @@
 import cipher from './cipher.js';
 
-window.addEventListener("load", inicio, true);
+//window.addEventListener("load", inicio, true);
 
-function inicio() {
+//function inicio() {
     document.getElementById("mensaje").addEventListener("keyup", function () {
         this.value = this.value.toUpperCase(); //mensaje escuchado se cambia automáticamente a mayúsculas
     }, true);
@@ -18,6 +18,6 @@ function inicio() {
         let desplazamiento = document.getElementById("desplazamiento").value;
         document.getElementById("mensajeSolicitado").value = cipher.decode(texto, desplazamiento);
     }, true); //función devuelve texto descifrado
-}
+//}
 
 console.log(cipher);

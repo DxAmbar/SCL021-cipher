@@ -6,23 +6,26 @@
   <title>Me contó un pajarito</title>
   <link rel="stylesheet" href="style.css" />
   <script src="index.js" type="module" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div id="root">
-    <h1>Me contó un pajarito</h1>
+    <h1>Me contó un pajarito</h1> <img src="images/pajarito.png" width= "150px" height= "100px">
     <h4>Me contó un pajarito es una app para escribir y descifrar mensajes
       <p>con tus amigos. ¡Háblales en código y mantén tus secretos!</p>
     </h4>
     <h3>Tu mensaje:</h3>
-    <p><input type="text" id="mensaje" placeholder="Escribe tu mensaje aquí"></p>
+    <textarea type="text" class="caja" id="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
     <h3>Desplazamiento</h3>
     <p><input type="number" id="desplazamiento" size="4" placeholder="Selecciona un valor"> </p>
-    <p><button type="button" id="cifrar">CIFRAR</button>
-      <button type="button" id="descifrar">DESCIFRAR</button>
+    <p><button type="button" class="button" id="cifrar">CIFRAR</button>
+      <button type="button" class="button" id="descifrar">DESCIFRAR</button>
     </p>
     <h3>Mensaje Solicitado:</h3>
-    <p><input type="text" id="mensajeSolicitado" placeholder="Tu mensaje aparecerá aquí"></p>
+    <textarea type="text" class="caja" id="mensajeSolicitado" placeholder="Tu mensaje aparecerá aquí"></textarea>
   </div>
 
 </body>
