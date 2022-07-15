@@ -17,7 +17,6 @@ import cipher from './cipher.js';
         let texto = document.getElementById("mensaje").value; //click sobre btn cifrar nos devuelve un valor
         let desplazamiento = document.getElementById("desplazamiento").value;
         document.getElementById("mensajeSolicitado").value = cipher.decode(texto, desplazamiento);
-    }, true); //función devuelve texto descifrado
-//}
-
+    }, true); //función devuelve texto descifrado   
+//
 console.log(cipher);
