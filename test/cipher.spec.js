@@ -25,8 +25,8 @@ describe('cipher', () => {
       expect(() => cipher.encode(0, 0)).toThrow(TypeError);
     });
 
-    it('should return "HIJKLMNÑOPQRSTUVWXYZABCDEFG" for "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ" with offset 33', () => {
-      expect(cipher.encode(33, 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ')).toBe('HIJKLMNÑOPQRSTUVWXYZABCDEFG');
+    it('should return "HIJKLMNÑOPQRSTUVWXYZABCDEFG" for "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ" with offset 34', () => {
+      expect(cipher.encode(34, 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ')).toBe('HIJKLMNÑOPQRSTUVWXYZABCDEFG');
     });
 
     // Hacker edition
@@ -53,9 +53,9 @@ describe('cipher', () => {
     // Se quiser adicionar testes para caracteres não alfabéticos, descomente o
     // teste abaixo.
     //
-    // it('should return " !@" for " !@"', () => {
-    //   expect(cipher.encode(33, ' !@')).toBe(' !@');
-    // });
+     it('should return " !@" for " !@"', () => {
+      expect(cipher.encode(33, ' !@')).toBe(' !@');
+     });
   });
 
   describe('cipher.decode', () => {
@@ -71,8 +71,8 @@ describe('cipher', () => {
       expect(() => cipher.decode(0, 0)).toThrow(TypeError);
     });
 
-    it('should return "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ" for "HIJKLMNÑOPQRSTUVWXYZABCDEFG" with offset 33', () => {
-      expect(cipher.decode(33, 'HIJKLMNÑOPQRSTUVWXYZABCDEFG')).toBe('ABCDEFGHIJKLMNÑOPQRSTUVWXYZ');
+    it('should return "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ" for "HIJKLMNÑOPQRSTUVWXYZABCDEFG" with offset 34', () => {
+      expect(cipher.decode(34, 'HIJKLMNÑOPQRSTUVWXYZABCDEFG')).toBe('ABCDEFGHIJKLMNÑOPQRSTUVWXYZ');
     });
 
     //

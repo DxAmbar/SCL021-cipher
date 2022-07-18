@@ -1,8 +1,8 @@
 import cipher from './cipher.js';
 
-//window.addEventListener("load", inicio, true);
+window.addEventListener("load", inicio, true);
 
-//function inicio() {
+function inicio() {
     document.getElementById("mensaje").addEventListener("keyup", function () {
         this.value = this.value.toUpperCase(); //mensaje escuchado se cambia automáticamente a mayúsculas
     }, true);
@@ -10,13 +10,13 @@ import cipher from './cipher.js';
     document.getElementById("cifrar").addEventListener("click", function () {
         let texto = document.getElementById("mensaje").value; //click sobre btn cifrar nos devuelve un valor
         let desplazamiento = document.getElementById("desplazamiento").value;
-        document.getElementById("mensajeSolicitado").value = cipher.encode(texto, desplazamiento);
+        document.getElementById("mensajeSolicitado").value = cipher.encode(desplazamiento, texto);
     }, true); //función devuelve un texto cifrado     
 
     document.getElementById("descifrar").addEventListener("click", function () {
         let texto = document.getElementById("mensaje").value; //click sobre btn cifrar nos devuelve un valor
         let desplazamiento = document.getElementById("desplazamiento").value;
-        document.getElementById("mensajeSolicitado").value = cipher.decode(texto, desplazamiento);
+        document.getElementById("mensajeSolicitado").value = cipher.decode(desplazamiento, texto);
     }, true); //función devuelve texto descifrado   
-//
-console.log(cipher);
+}
+//console.log(cipher);

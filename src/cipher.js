@@ -1,11 +1,15 @@
 const cipher = {
 
-    encode: function (texto, desplazamiento) {
+    encode: function (desplazamiento, texto) {
       console.log(texto)
   
-     if (!texto) {
-      throw new TypeError();
-     }
+      if (typeof texto !== "string") {
+        throw new TypeError();
+       }
+  
+       if (typeof desplazamiento !== "number") {
+          throw new TypeError();
+         }
   
       let resultado = "";
       let letras = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "Ñ", "O", "P",
@@ -22,21 +26,27 @@ const cipher = {
             resultado += texto[i]; //se muestra carácter igual al que se ingresó (símbolos, n°s, espacios, etc.)
         }
       }
+        
       return resultado;
     },
   
   
-    decode: function (texto, desplazamiento) {
+    decode: function (desplazamiento, texto) {
 
 
-        if (!texto) {
+        if (typeof texto !== "string") {
       throw new TypeError();
      }
+
+     if (typeof desplazamiento !== "number") {
+        throw new TypeError();
+       }
 
       let resultado = "";
       let letras = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "Ñ", "O", "P",
         "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
       desplazamiento = (desplazamiento % 27 - 27) % 27; //desplazamiento a la izquierda
+      //desplazamiento = (desplazamiento % 26 - 26) % 26;
   
       if (texto) {
         for (let i = 0; i < texto.length; i++) {
@@ -49,6 +59,7 @@ const cipher = {
             resultado += texto[i];
         }
       }
+
       return resultado;
     },
   
