@@ -9,13 +9,13 @@ function inicio() {
 
     document.getElementById("cifrar").addEventListener("click", function () {
         let texto = document.getElementById("mensaje").value; //click sobre btn cifrar nos devuelve un valor
-        let desplazamiento = document.getElementById("desplazamiento").value;
+        let desplazamiento = +document.getElementById("desplazamiento").value;
         document.getElementById("mensajeSolicitado").value = cipher.encode(desplazamiento, texto);
     }, true); //función devuelve un texto cifrado     
 
     document.getElementById("descifrar").addEventListener("click", function () {
         let texto = document.getElementById("mensaje").value; //click sobre btn cifrar nos devuelve un valor
-        let desplazamiento = document.getElementById("desplazamiento").value;
+        let desplazamiento = +document.getElementById("desplazamiento").value;
         document.getElementById("mensajeSolicitado").value = cipher.decode(desplazamiento, texto);
     }, true); //función devuelve texto descifrado   
 }
