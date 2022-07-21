@@ -5,7 +5,7 @@
 * [Usuarios](#Usuarios)
 * [Diseño e interfaz](#Diseño-e-interfaz)
 
-##Introducción
+## Introducción
 
 "Me contó un pajarito" es una aplicación basada en el Cifrado César, pero ¿qué es el Cifrado César?
 
