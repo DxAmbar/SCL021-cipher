@@ -9,7 +9,7 @@
 
 "Me contó un pajarito" es una aplicación basada en el Cifrado César, pero ¿qué es el Cifrado César?
 
-La historia cuenta que el emperador Julio César usaba este método de cifrado para mandar órdenes a sus generales en el campo de batalla, de ahí el nombre. Lo que hacía el emperador, era enviar sus órdenes escritas en el alfabeto latino, pero reemplazando cada letra por 3 posiciones hacia la derecha, en palabras simples, "ABC" es reemplazado por "DEF".
+La historia cuenta que el emperador Julio César usaba este método de cifrado para mandar órdenes a sus generales en el campo de batalla, de ahí el nombre. Lo que hacía el emperador, era enviar sus órdenes escritas en el alfabeto latino, pero reemplazando cada letra por 3 posiciones hacia la derecha. En palabras simples, "ABC" es reemplazado por "DEF".
 
 ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
 
@@ -29,7 +29,7 @@ Una vez se cumplieran los objetivos de funcionalidad, se procedió a construir l
 
 Primero había que pensar en la dinámica: ¿quiénes eran conocidos por llevar cartas o contar secretos? Pués, en la cultura popular, son los pajaritos. 
 
-En segundo lugar había que escojer a una mascota para la aplicación tras una intensa búsqueda de la mascota ideal, se optó por este tierno pajarito llevando una carta. 
+En segundo lugar, había que escojer a una mascota para la aplicación: tras una intensa búsqueda de la mascota ideal, se optó por este tierno pajarito llevando una carta. 
 
 ![Mascota](https://i.ibb.co/yymnxzD/animal-1320792-640.png "Mascota")
 
