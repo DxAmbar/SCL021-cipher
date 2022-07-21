@@ -41,7 +41,7 @@ Tras ensayo y error, se decidió dejar el modelo final de la siguiente manera, a
 
 ![App](https://i.ibb.co/zQJVCkD/app.png "App")
 
-Por último, ¡faltaba subir la app para que la puedas usar! y eso lo puedes hacer en el siguiente [link](https://dxambar.github.io/SCL021-cipher/ "link")
+Por último, ¡faltaba subir la app para que la puedas usar! y eso lo puedes hacer en el siguiente [link](https://dxambar.github.io/SCL021-cipher/src "link")
 
 ¡Gracias por visitar el código de "Me contó un pajarito"!
 
